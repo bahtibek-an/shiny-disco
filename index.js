@@ -25,7 +25,7 @@ app.post('/webhook', function (req, res) {
     var headerHmacSignature = req.get("X-Classmarker-Hmac-Sha256");
 
     // You are given a unique secret code when creating a Webhook.
-    var secret = 'YOUR_CLASSMARKER_WEBHOOK_SECRET_PHRASE';
+    var secret = 'PEg2e17k3F5zXD3';
 
     var verified = verifyData(req.rawBody,headerHmacSignature,secret);
 
